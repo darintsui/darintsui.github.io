@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Darin Tsui</title>
+    <link>https://darintsui.github.io/project/</link>
+      <atom:link href="https://darintsui.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 14 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://darintsui.github.io/media/icon_hu382b23d3a754463455488130ff2cf495_259114_512x512_fill_lanczos_center_3.png</url>
+      <title>Projects</title>
+      <link>https://darintsui.github.io/project/</link>
+    </image>
+    
+    <item>
+      <title>Supervised ML Approaches for Predicting Cancer Survival Rate</title>
+      <link>https://darintsui.github.io/project/cancersurvival/</link>
+      <pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://darintsui.github.io/project/cancersurvival/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&amp;ldquo;How long have I got?&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Most Stage IV lung cancer patients worldwide tend to have poor survival: 25-30% die within the first 3 months of diagnosis. However, of those patients suriving longer than 3 months, 10-15% of those patients survive very long. The question becomes then: what metrics can we use to determine a patient&amp;rsquo;s survival projection using clinically relevant data. In this project, we look to develop and validate a survival prediction model in a cohort of different stages patients of lung cancer.&lt;/p&gt;
+&lt;h2 id=&#34;data-selection&#34;&gt;Data Selection&lt;/h2&gt;
+&lt;p&gt;Data for this project was taken from the Cancer Genome Atlas Lung Adenocarcinoma (TCGA-LUAD). The data consists of 572 samples obtained from 512 individuals, with over 20,000 genes for each. We mainly utilize the gene expression and metadata datasets for our analysis. We performed Log2 transformation on the expression data and removed the recurrent and normal samples.&lt;/p&gt;
+&lt;p&gt;We look to analyze two different clinical endpoints: the 1 year and 3 year mark. We divided patients into two categories: those labeled as &amp;rsquo;negative&amp;rsquo; if lung cancer was reported as their cause of death and their survival time was shorter than the predetermined endpoint, and &amp;lsquo;positive&amp;rsquo; if their survival time surpassed the specified endpoint. From here, we note the 1 year dataset is incredibly imbalanced, with only ~15% of patients dying before the clinical endpoint. The 3 year dataset has a more balanced split of about 55-45%.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;samples.png&#34; alt=&#34;Clinical endpoint of samples&#34; width=&#34;600&#34;/&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;feature-selection&#34;&gt;Feature Selection&lt;/h2&gt;
+&lt;p&gt;We look to perform feature selection on the gene expression data. Using all 20000 genes, DESeq2 was performed to obtain the top 100 genes associated with predictions. From here, these genes as well as several metadata features (age at diagnosis, gender, tumor stage, and smoker status) were run through XGBoost to determine the most useful features.&lt;/p&gt;
+&lt;h2 id=&#34;training-and-testing&#34;&gt;Training and Testing&lt;/h2&gt;
+&lt;p&gt;After training our data using XGBoost, we analyzed the importance of each feature. Using a significance threshold, features above this threshold were retained for classification. Classification was performed using XGBoost as well as Support Vector Machines (SVM) using a grid search approach. Due to the imbalanced dataset, we train our models based on F1 score.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;In the 1 year approach, we were able to obtain a maximal F1 score of 0.6 for the dead patient group. We note that the accuracy metric is misleading, since there are significantly more alive than dead patients.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;results_1year.png&#34; alt=&#34;Results for 1 year&#34; width=&#34;800&#34;/&gt;
+&lt;/p&gt;
+&lt;p&gt;In the 3 year approach, we were able to obtain a maximal classification accuracy of 69.05%. Since our dataset is more balanced, reporting accuracy is not as misleading as in the 1 year case.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;results_3year.png&#34; alt=&#34;Results for 3 years&#34; width=&#34;800&#34;/&gt;
+&lt;/p&gt;
+&lt;p&gt;Overall, this project successfully displays that careful feature selection using bioinformatics and classical machine learning techniques can identify prognostic features towards predicting clinical endpoint.&lt;/p&gt;
+&lt;h2 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h2&gt;
+&lt;p&gt;This group project was inspired by ECE 204: Statistical Learning in Bioinformatics, taught at UC San Diego under Dr. Ludmil Alexandrov.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Novel Approach to Motor Imagery Classification via Mini-Epoch Generation
+</title>
+      <link>https://darintsui.github.io/project/motorimagery_featureselection/</link>
+      <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://darintsui.github.io/project/motorimagery_featureselection/</guid>
+      <description>&lt;p&gt;Classification of motor imagery tasks based on EEG signals has a wide range of applications in clinical science and Brain-Computer Interfaces (BCIs). However, most deep learning attempts at motor imagery classification fail to retain the temporal information in the EEG signals that is critical for motor imagery. Here, we propose two algorithms, mini-epoch learning and mini-epoch ensemble learning, that aim to tackle this limitation.&lt;/p&gt;
+&lt;h2 id=&#34;data-selection&#34;&gt;Data Selection&lt;/h2&gt;
+&lt;p&gt;Data for this project was taken from the Berlin Brain-Computer Interface (BCI) Competition IV &lt;a href=&#34;https://www.bbci.de/competition/iv/#dataset2a&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dataset&lt;/a&gt; 2a. In this, we have subjects performing motor imagery tasks. Motor imagery is a cognitive process in where a subject imagines performing a movement without moving their body. In this experimental setup, subjects were asked to imagine four movements: moving the left hand, right hand, tongue, and foot.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;timing_scheme.png&#34; alt=&#34;Timing scheme&#34; width=&#34;600&#34;/&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;feature-selection&#34;&gt;Feature Selection&lt;/h2&gt;
+&lt;p&gt;We pull relevant information from the EEG signals by
+extracting the data 1 second to 4 seconds after the stimulus
+was cued. From here, we divide the input signals in the
+time domain into small sub-intervals, which we will refer to
+as “mini-epochs”. We experimented with two mini-epoch
+generation strategies: fixed and sliding.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Fixed mini-epoch window: The time signal is divided
+into N non-overlapping intervals with equal length. In
+this approach, the next interval starts from the point
+where the first interval ends as shown below. Each
+mini-epoch spans T = 3 N seconds&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;interval.png&#34; alt=&#34;Fixed window&#34; width=&#34;700&#34;/&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Sliding mini-epoch window: With fixed window
+length T second of each epoch and the number of mini-
+epochs N determined, the mini-epoch can be gener-
+ated by sliding the window by increment of ∆t = (3−T)/(N−1)
+seconds. Using this approach, we can more flexibly
+determine the mini-epoch duration and the number of
+mini-epochs while spanning the full time sequence via
+varying the parameters T and N . These mini-epochs
+can be overlapping as shown in Figure 3. Using this
+approach, we can more clearly observe the effect of trimming the EEG signal into sub-intervals and look
+for an optimal mini-epoch length that extracts the significance of different time steps for the EEG signal.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;sliding.png&#34; alt=&#34;Sliding window&#34; width=&#34;600&#34;/&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;preprocessing&#34;&gt;Preprocessing&lt;/h2&gt;
+&lt;p&gt;In our approach, after adding our mini-epoch window implementation, we follow the below pipeline.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Filter the signal through a bandpass filter from 7Hz to
+30Hz, which is the only frequency range containing
+relevant information about the motor imagery tasks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Remove signals from EOG channels and consider only
+the 22 EEG channels for motor imagery tasks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Apply wavelet packet decomposition (WPD) tech-
+nique to the resulting signal to extract features in the
+frequency domain. WPD is an extension of Wavelet
+Decomposition that comprises several bases with more
+filtering operations applied to the wavelets.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Apply Common Spatial Pattern (CSP) technique for
+extracting spatial features from the signal. It has been
+widely used for feature extraction in EEG-based BCI
+systems for motor imagery.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;preproc.png&#34; alt=&#34;Signal processing pipeline&#34; width=&#34;700&#34;/&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;learning-architectures&#34;&gt;Learning Architectures&lt;/h2&gt;
+&lt;p&gt;We explore two learning architectures: mini-epoch learning and mini-epoch ensemble learning.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Mini-epoch learning&lt;/strong&gt;: After signal processing is applied to our data, we create
+a feature set out of the resulting signals. From here, this
+feature set is fed into a classifier to output the most probable class out of the entire time series. This classifier can be any classification algorithm, such as multi-layer perception (MLP), XGBoost, and support vector machine (SVM).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;featured.png&#34; alt=&#34;Mini-epoch learning&#34; width=&#34;700&#34;/&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Mini-epoch ensemble learning&lt;/strong&gt;: In this implementation, after signal processing is applied
+to our data, we feed the resulting signals to a selected base
+multi-class classifier. However, instead of directly yielding
+the predicted label, these base classifiers are employed to
+generate the normalized scores for each label. These nor-
+malized scores indicate the probability distribution of each
+label predicted within each mini-epoch. Like the classifier
+in the mini-epoch learning algorithm, the base classifiers
+can be implemented with any classification algorithm. These N base classifiers form the ensemble to make the
+final prediction for the last step.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;mini_epoch_architecture.png&#34; alt=&#34;Mini-epoch ensemble learning&#34; width=&#34;700&#34;/&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;training-and-testing&#34;&gt;Training and Testing&lt;/h2&gt;
+&lt;p&gt;We look to test our feature selection technique using three classifiers: multi-layer perceptron (MLP), XGBoost, and SVM. We find that implementing our mini-epoch learning algorithm with SVM proved to be the most accurate in identifying different motor imagery tasks, with an accuracy of 63.16%.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;mini_epoch_table.png&#34; alt=&#34;Table 1&#34; width=&#34;600&#34;/&gt;
+&lt;/p&gt;
+&lt;p&gt;Implementing mini-epoch ensemble learning with XGB recorded the highest accuracy of 61.04%.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;ensemble_table.png&#34; alt=&#34;Table 1&#34; width=&#34;600&#34;/&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h2&gt;
+&lt;p&gt;This group project was inspired by ECE 271B: Statistical Learning II, taught at UC San Diego under Dr. Manuela Vasconcelos.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Implementation and Optimization of Convolutional Neural Networks for Plankton Classification
+</title>
+      <link>https://darintsui.github.io/project/planktonclassification/</link>
+      <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://darintsui.github.io/project/planktonclassification/</guid>
+      <description>&lt;p&gt;In order to process the large amounts of image data collected by underwater imaging sensors, we evaluated the usage of convolutional neural networks to perform image classification. We preprocessed the image data and trained CNN models 121 different classes of plankton.&lt;/p&gt;
+&lt;h2 id=&#34;data-selection&#34;&gt;Data Selection&lt;/h2&gt;
+&lt;p&gt;Data for this project was taken from the &lt;a href=&#34;https://www.kaggle.com/c/datasciencebowl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2014 National Data Science Bowl&lt;/a&gt;. In this set, we are given images spanning 121 different classes of plankton. In addition, our dataset comes highly imbalanced.&lt;/p&gt;
+&lt;h2 id=&#34;preprocessing-and-optimization&#34;&gt;Preprocessing and Optimization&lt;/h2&gt;
+&lt;p&gt;Using the image data, we resize all images to be 48 x 48. We also nrmalize the RGB values of the images in accordance with their relative weight in grayscale. From here, we try several techniques to improve the accuracy of our classifier: varying learning rate, varying optimizer, implementing Leaky ReLU, implementing cross-validation, and augmenting data via affine transformation.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;parameters.png&#34; alt=&#34;Default parameters used&#34; width=&#34;400&#34;/&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;training-and-testing&#34;&gt;Training and Testing&lt;/h2&gt;
+&lt;p&gt;Using the data, we look to train and test our classifier using the AlexNet implementation from PyTorch. After hypertuning our parameters, we were able to obtain a classification accuracy of 74%.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;AlexNet.png&#34; alt=&#34;AlexNet architecture&#34; width=&#34;200&#34;/&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h2&gt;
+&lt;p&gt;This group project was inspired by COGS 181: Neural Networks and Deep Learning, taught at UC San Diego under Dr. Zhuowen Tu.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

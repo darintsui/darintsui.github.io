@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | Darin Tsui</title>
+    <link>https://darintsui.github.io/post/</link>
+      <atom:link href="https://darintsui.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 14 May 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://darintsui.github.io/media/icon_hu382b23d3a754463455488130ff2cf495_259114_512x512_fill_lanczos_center_3.png</url>
+      <title>Posts</title>
+      <link>https://darintsui.github.io/post/</link>
+    </image>
+    
+    <item>
+      <title>Machine Learning: A Gentle Introduction to Image Classification
+</title>
+      <link>https://darintsui.github.io/post/imageclassification/</link>
+      <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://darintsui.github.io/post/imageclassification/</guid>
+      <description>&lt;p&gt;This project and codebase was created for a deep learning workshop for the Institute of Electrical and Electronics Engineers (IEEE) @ UCSD. Here, we go over the basics of image classification using convolutional neural networks (CNN) on the MNIST dataset.&lt;/p&gt;
+&lt;h2 id=&#34;data-selection&#34;&gt;Data Selection&lt;/h2&gt;
+&lt;p&gt;Data for this project was taken from &lt;a href=&#34;https://www.tensorflow.org/datasets/catalog/mnist&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MNIST dataset&lt;/a&gt;. In this set, we are given images comprised of handwritten digits from 0 to 9.&lt;/p&gt;
+&lt;h2 id=&#34;training-and-testing&#34;&gt;Training and Testing&lt;/h2&gt;
+&lt;p&gt;We format the data by one-hot encoding the labels from 0-9. We then look to normalize our data by dividing the pixel data information by 255. From here, we split our data into train and testing sets, and train a basic CNN model while varying common parameters such as learning rate, batch size, number of epochs, and optimizer. Using this implementation, we are able to obtain an accuracy of 98.77%.&lt;/p&gt;
+&lt;h2 id=&#34;future-work&#34;&gt;Future Work&lt;/h2&gt;
+&lt;p&gt;For a more thorough implementation of CNN models on a harder dataset, feel free to check out my implementation of AlexNet on plankton classification!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cracking the Code - Machine Learning and Medical Diagnosis
+</title>
+      <link>https://darintsui.github.io/post/crackingthecode/</link>
+      <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://darintsui.github.io/post/crackingthecode/</guid>
+      <description>&lt;p&gt;This project and codebase was created for a machine learning workshop for the Biomedical Engineering Society (BMES) at UC San Diego. Here, we go over the basics of image classification in MRI imaging.&lt;/p&gt;
+&lt;h2 id=&#34;data-selection&#34;&gt;Data Selection&lt;/h2&gt;
+&lt;p&gt;Data for this project was taken from &lt;a href=&#34;https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kaggle&lt;/a&gt;. In this set, we are given images comprised of yes and no labels.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;yes.png&#34; alt=&#34;Yes label&#34; width=&#34;600&#34;/&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;training-and-testing&#34;&gt;Training and Testing&lt;/h2&gt;
+&lt;p&gt;We preprocess the data by extracting the RGB values of the images after resizing. From here, we perform K-Nearest Neighbors (KNN) over a wide range of neighbors using 5-fold cross-validation. Using this approach, we are able to obtain an accuracy of 77.49% at 73 nearest neighbors.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hacking the Brain: Machine Learning and Human Behavior
+</title>
+      <link>https://darintsui.github.io/post/hackingthebrain/</link>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://darintsui.github.io/post/hackingthebrain/</guid>
+      <description>&lt;p&gt;This project and codebase was created for a computational neuroscience workshop for the Institute of Electrical and Electronics Engineers (IEEE) @ UCSD. Here, we go over the basics of supervised learning in electroencephalogram (EEG) data.&lt;/p&gt;
+&lt;h2 id=&#34;data-selection&#34;&gt;Data Selection&lt;/h2&gt;
+&lt;p&gt;Data for this project was taken from the Berlin Brain-Computer Interface (BCI) Competition IV &lt;a href=&#34;https://www.bbci.de/competition/iv/#dataset2a&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dataset&lt;/a&gt; 2a. In this, we have subjects performing motor imagery tasks. Motor imagery is a cognitive process in where a subject imagines performing a movement without moving their body. In this experimental setup, subjects were asked to imagine four movements: moving the left hand, right hand, tongue, and foot.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;experimental_setup.png&#34; alt=&#34;Timing scheme&#34; width=&#34;600&#34;/&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;feature-selection&#34;&gt;Feature Selection&lt;/h2&gt;
+&lt;p&gt;We perform feature selection by analyzing the EEG data usinga biological lens. We extract EEG data from the somatosensory cortex within the beta frequency band (8-30 Hz). We&amp;rsquo;re able to extract these features in the frequency domain by transforming our data to the power spectral density (PSD). For demonstration purposes, we look to perform binary classification on the left hand and foot.&lt;/p&gt;
+&lt;h2 id=&#34;training-and-testing&#34;&gt;Training and Testing&lt;/h2&gt;
+&lt;p&gt;From here, we perform common spatial patterns (CSP), followed by linear discriminant analysis (LDA). Using this method, we obtain an accuracy of 76.55%.&lt;/p&gt;
+&lt;h2 id=&#34;future-work&#34;&gt;Future Work&lt;/h2&gt;
+&lt;p&gt;For a more thorough analysis of the feasibility of multi-class EEG classification, you can refer to my motor imagery project developing a novel feature selection and classification pipeline.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

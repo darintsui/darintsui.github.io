@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://darintsui.github.io/sitemap.xml
