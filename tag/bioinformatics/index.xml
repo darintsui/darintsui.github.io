@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bioinformatics | Darin Tsui</title><link>https://darintsui.github.io/tag/bioinformatics/</link><atom:link href="https://darintsui.github.io/tag/bioinformatics/index.xml" rel="self" type="application/rss+xml"/><description>Bioinformatics</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 14 Jun 2023 00:00:00 +0000</lastBuildDate><image><url>https://darintsui.github.io/media/icon_hu382b23d3a754463455488130ff2cf495_259114_512x512_fill_lanczos_center_3.png</url><title>Bioinformatics</title><link>https://darintsui.github.io/tag/bioinformatics/</link></image><item><title>Supervised ML Approaches for Predicting Cancer Survival Rate</title><link>https://darintsui.github.io/project/cancersurvival/</link><pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate><guid>https://darintsui.github.io/project/cancersurvival/</guid><description>&lt;p>&lt;strong>&amp;ldquo;How long have I got?&amp;rdquo;&lt;/strong>&lt;/p>
+&lt;p>Most Stage IV lung cancer patients worldwide tend to have poor survival: 25-30% die within the first 3 months of diagnosis. However, of those patients suriving longer than 3 months, 10-15% of those patients survive very long. The question becomes then: what metrics can we use to determine a patient&amp;rsquo;s survival projection using clinically relevant data. In this project, we look to develop and validate a survival prediction model in a cohort of different stages patients of lung cancer.&lt;/p>
+&lt;h2 id="data-selection">Data Selection&lt;/h2>
+&lt;p>Data for this project was taken from the Cancer Genome Atlas Lung Adenocarcinoma (TCGA-LUAD). The data consists of 572 samples obtained from 512 individuals, with over 20,000 genes for each. We mainly utilize the gene expression and metadata datasets for our analysis. We performed Log2 transformation on the expression data and removed the recurrent and normal samples.&lt;/p>
+&lt;p>We look to analyze two different clinical endpoints: the 1 year and 3 year mark. We divided patients into two categories: those labeled as &amp;rsquo;negative&amp;rsquo; if lung cancer was reported as their cause of death and their survival time was shorter than the predetermined endpoint, and &amp;lsquo;positive&amp;rsquo; if their survival time surpassed the specified endpoint. From here, we note the 1 year dataset is incredibly imbalanced, with only ~15% of patients dying before the clinical endpoint. The 3 year dataset has a more balanced split of about 55-45%.&lt;/p>
+&lt;p align="center">
+&lt;img src="samples.png" alt="Clinical endpoint of samples" width="600"/>
+&lt;/p>
+&lt;h2 id="feature-selection">Feature Selection&lt;/h2>
+&lt;p>We look to perform feature selection on the gene expression data. Using all 20000 genes, DESeq2 was performed to obtain the top 100 genes associated with predictions. From here, these genes as well as several metadata features (age at diagnosis, gender, tumor stage, and smoker status) were run through XGBoost to determine the most useful features.&lt;/p>
+&lt;h2 id="training-and-testing">Training and Testing&lt;/h2>
+&lt;p>After training our data using XGBoost, we analyzed the importance of each feature. Using a significance threshold, features above this threshold were retained for classification. Classification was performed using XGBoost as well as Support Vector Machines (SVM) using a grid search approach. Due to the imbalanced dataset, we train our models based on F1 score.&lt;/p>
+&lt;h2 id="results">Results&lt;/h2>
+&lt;p>In the 1 year approach, we were able to obtain a maximal F1 score of 0.6 for the dead patient group. We note that the accuracy metric is misleading, since there are significantly more alive than dead patients.&lt;/p>
+&lt;p align="center">
+&lt;img src="results_1year.png" alt="Results for 1 year" width="800"/>
+&lt;/p>
+&lt;p>In the 3 year approach, we were able to obtain a maximal classification accuracy of 69.05%. Since our dataset is more balanced, reporting accuracy is not as misleading as in the 1 year case.&lt;/p>
+&lt;p align="center">
+&lt;img src="results_3year.png" alt="Results for 3 years" width="800"/>
+&lt;/p>
+&lt;p>Overall, this project successfully displays that careful feature selection using bioinformatics and classical machine learning techniques can identify prognostic features towards predicting clinical endpoint.&lt;/p>
+&lt;h2 id="acknowledgements">Acknowledgements&lt;/h2>
+&lt;p>This group project was inspired by ECE 204: Statistical Learning in Bioinformatics, taught at UC San Diego under Dr. Ludmil Alexandrov.&lt;/p></description></item></channel></rss>
