@@ -1,3 +1,4 @@
 User-agent: *
+Disallow:
 
 Sitemap: https://darintsui.github.io/sitemap.xml
