@@ -23,6 +23,12 @@ ENV LANG=en_US.UTF-8 \
     LC_ALL=en_US.UTF-8 \
     JEKYLL_ENV=production
 
+RUN chmod +x C:/Users/darin/Documents/GitHub/darintsui.github.io/bin/entry_point.sh
+# COPY bin/entry_point.sh /tmp/entry_point.sh
+COPY C:/Users/darin/Documents/GitHub/darintsui.github.io/bin/entry_point.sh C:/Users/darin/Documents/GitHub/darintsui.github.io/tmp/entry_point.sh
+RUN chmod +x C:/Users/darin/Documents/GitHub/darintsui.github.io/tmp/entry_point.sh
+CMD ["/tmp/entry_point.sh"]
+
 # install jekyll and dependencies
 RUN gem install jekyll bundler
 
@@ -36,6 +42,3 @@ RUN bundle install --no-cache
 # && rm -rf /var/lib/gems/3.1.0/cache
 EXPOSE 8080
 
-COPY bin/entry_point.sh /tmp/entry_point.sh
-
-CMD ["/tmp/entry_point.sh"]
