@@ -2,7 +2,7 @@
   type: map
   contents:
     - name: Email
-      value: <a href="mailto:dtsui@ieee.org">dtsui@ieee.org</a>
+      value: <a href="mailto:darint@gatech.edu">darint@gatech.edu</a>
     - name: LinkedIn
       value: <a href="https://www.linkedin.com/in/darintsui/">https://www.linkedin.com/in/darintsui/</a>
     - name: GitHub
@@ -27,16 +27,24 @@
 - title: Awards
   type: time_table
   contents:
-    - title: Graduate Student Conference Scholarship Award
-      year: Aug 2023
+    - title: NSF Graduate Research Fellowship
+      year: 2024 - 2027
       description: >
-        Award received at ISPS 2023 for outstanding research and paper submission
-    - title: President’s Fellowship at Georgia Tech
-      year: Aug 2023
+        Variant prediction using deep generative models.
+    - title: CREATION Award at Georgia Tech
+      year: 2023
+      description: >
+        Award received for assisting in the creation and development of ECE 8803—Generative and Geometric Deep Learning.
+    - title: Graduate Student Conference Scholarship Award
+      year: 2023
+      description: >
+        Award received at ISPS 2023 for outstanding research and paper submission.
+    - title: President's Fellowship at Georgia Tech
+      year: 2023
       description: >
         Award received for exemplary levels of scholarship and research innovation.
     - title: Anushka Michailova Memorial Best Undergraduate Poster Award 
-      year: May 2023
+      year: 2023
       description: >
         Poster: COVID-19 Detection via. Graphene Field-Effect-Transistor (GFET) 
       
