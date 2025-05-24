@@ -19,9 +19,16 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi there! My name is Darin. I'm a Ph.D. student at the Georgia Institute of Technology studying Electrical and Computer Engineering and Bioengineering. I previously received my BS degree at the University of California San Diego in Bioengineering. <br><br>
+Hi there! My name is Darin. I'm a Ph.D. student at the Georgia Institute of Technology studying Electrical and Computer Engineering and Bioengineering. I previously received my BS degree at the University of California San Diego in Bioengineering. 
 
-I am currently working on developing explainable tools for generative models in bioinformatics with Dr. <a href="https://amirmohan.github.io/">Amirali Aghazadeh</a>. Previously, I was designing a low-cost surgical navigation platform using computer vision under Dr. Frank Talke in the <a href="https://www.talkelab.ucsd.edu/">Talke Biomedical Device Lab</a>. I have also designed a bioelectronic COVID-19 diagnostic test under Dr. Gert Cauwenberghs in the <a href="https://isn.ucsd.edu/index.php">Integrated Systems Neuroengineering Laboratory</a>. <br><br>
+I currently work with Dr. <a href="https://amirmohan.github.io/">Amirali Aghazadeh</a> in the AI ML & Information Group, where I develop **scalable, interpretable tools** for generative models in the biosciences. I am currently supported by the NSF Graduate Research Fellowship. My research focuses on:
+- Explaining **black-box models** by bridging the gap between interpretability and the sparse Fourier transform.
 
-Outside of research, I was the 2022-2023 President of the <a href="https://ieeeucsd.org/">Institute of Electrical and Electronics Engineers 
-(IEEE) student branch</a> at UC San Diego. I am an active IEEE member as well as a member of the IEEE Engineering in Medicine and Biology Society (EMBS). 
+- Extracting **higher-order interactions** from models for scientific discovery.
+
+- Developing principled **generative models** that leverage domain priors. 
+
+My background is highlighly interdisciplinary. I previously validated deep learning models at <a href="https://www.linkedin.com/company/surgalign/">Surgalign</a> (acquired by Xtant Medical), developed an optical surgical platform in the <a href="https://www.talkelab.ucsd.edu/">Talke Biomedical Device Lab</a>, and designed a bioelectronic COVID-19 test in the <a href="https://isn.ucsd.edu/index.php">Integrated Systems Neuroengineering Laboratory</a>. 
+
+Outside of research, I co-chair <a href="https://research.gatech.edu/2025-bioe-day">Bioengineering Day</a> at Georgia Tech, which aims to highlight interdisciplinary research  . Previously, I served as President of the <a href="https://ieeeucsd.org/">IEEE student branch</a> and helped found the <a href="https://www.instagram.com/embs.ucsd/">IEEE EMBS chapter</a> at UC San Diego.   
+
