@@ -22,7 +22,7 @@ social: true  # includes social icons at the bottom of the page
 Hi there! My name is Darin. I'm a Ph.D. student at the Georgia Institute of Technology studying Electrical and Computer Engineering and Bioengineering. I previously received my BS degree at the University of California San Diego in Bioengineering. 
 
 I currently work with Dr. <a href="https://amirmohan.github.io/">Amirali Aghazadeh</a> in the AI ML & Information Group, where I develop **scalable, interpretable tools** for generative models in the biosciences. I am currently supported by the NSF Graduate Research Fellowship. My research focuses on:
-- Explaining **black-box models** by bridging the gap between interpretability and the sparse Fourier transform.
+- Explaining **black-box models** by bridging the gap between interpretability and signal processing.
 
 - Extracting **higher-order interactions** from models for scientific discovery.
 
