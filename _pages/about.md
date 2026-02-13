@@ -30,5 +30,6 @@ I currently work with Dr. <a href="https://amirmohan.github.io/">Amirali Aghazad
 
 My background is highlighly interdisciplinary. I previously validated deep learning models at <a href="https://www.linkedin.com/company/surgalign/">Surgalign</a> (acquired by Xtant Medical), developed an optical surgical platform in the <a href="https://www.talkelab.ucsd.edu/">Talke Biomedical Device Lab</a>, and designed a bioelectronic COVID-19 test in the <a href="https://isn.ucsd.edu/index.php">Integrated Systems Neuroengineering Laboratory</a>. 
 
-Outside of research, I co-chair <a href="https://research.gatech.edu/2025-bioe-day">Bioengineering Day</a> at Georgia Tech, which aims to highlight interdisciplinary research. Previously, I served as President of the <a href="https://ieeeucsd.org/">IEEE student branch</a> and helped found the <a href="https://www.instagram.com/embs.at.ucsd/">IEEE EMBS chapter</a> at UC San Diego.   
+Outside of research, I co-chair <a href="https://research.gatech.edu/2025-bioe-day">Bioengineering Day</a> at Georgia Tech, which aims to highlight interdisciplinary research. Previously, I served as President of the <a href="https://www.instagram.com/ieee.at.ucsd/">IEEE student branch</a> and helped found the <a href="https://www.instagram.com/embs.at.ucsd/">IEEE EMBS chapter</a> at UC San Diego.   
+<!-- <a href="https://ieeeucsd.org/">IEEE student branch</a> -->
 
