@@ -13,7 +13,7 @@ nav_order: 2
     * Presented at the ML Student Seminar at Georgia Tech
     * [Slides](https://github.com/darintsui/Presentations/blob/main/research/SHAPzero-NeurIPS-2025.pdf)
 
-* **October 2025 – Efficient algorithm for sparse Fourier transform of generalized $q$-ary functions**
+* **October 2025 – Efficient algorithm for sparse Fourier transform of generalized q-ary functions**
     * Presented on my behalf at IEEE ITW
     * [Slides](https://github.com/darintsui/Presentations/blob/main/research/GFast-ISIT-2025.pdf)
 
