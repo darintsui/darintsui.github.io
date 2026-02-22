@@ -27,10 +27,14 @@
 - title: Awards
   type: time_table
   contents:
-    - title: NSF Graduate Research Fellowship
-      year: 2024 - 2027
+    - title: Steve W. Chaddick Fellowship
+      year: 2025
       description: >
-        Variant prediction using deep generative models.
+        Fellowship awarded for outstanding contributions in research.
+    - title: NSF Graduate Research Fellowship
+      year: 2024 — 2027
+      description: >
+        Fellowship recognizing potential for significant research contributions (top 14% of applicants).
     - title: CREATION Award at Georgia Tech
       year: 2023
       description: >
@@ -38,17 +42,15 @@
     - title: Graduate Student Conference Scholarship Award
       year: 2023
       description: >
-        Award received at ISPS 2023 for outstanding research and paper submission.
+        Award received for outstanding paper submission and oral presentation.
     - title: President's Fellowship at Georgia Tech
       year: 2023
       description: >
-        Award received for exemplary levels of scholarship and research innovation.
+        Fellowship awarded to top 10% of Ph.D. appplicants based on their research and scholarship..
     - title: Anushka Michailova Memorial Best Undergraduate Poster Award 
       year: 2023
       description: >
-        Poster: COVID-19 Detection via. Graphene Field-Effect-Transistor (GFET) 
-      
-        Award received at Bioengineering Day at UC San Diego for best capstone project.
+        Award received for best capstone project out of 100 teams. Submissions were evaluated on technical depth, innovation, and research dissemination.
 
 # - title: Experience
 #   type: time_table
