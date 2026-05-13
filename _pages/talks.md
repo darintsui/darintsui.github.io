@@ -21,6 +21,9 @@ nav_order: 2
 
 ## Lectures
 
+* **Spring 2026 – IIR Filters and Feedback**
+    * Guest lecturer for ECE 2026—Intro to Signal Processing—at Georgia Tech
+
 * **Fall 2025 – Explainability and mechanistic interpretability in AI**
     * Guest lecturer for ECE 8803—Generative and Geometric Deep Learning—at Georgia Tech
     * [Slides](https://github.com/darintsui/Presentations/blob/main/lectures/Explanability-GDL-2025.pdf)

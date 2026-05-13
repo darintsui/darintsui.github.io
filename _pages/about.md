@@ -24,12 +24,11 @@ Hi there! My name is Darin. I'm a Ph.D. candidate and NSF GRFP fellow at the Geo
 I currently work with Dr. <a href="https://amirmohan.github.io/">Amirali Aghazadeh</a> in the AI ML & Information Group, where I develop **scalable tools** for generative models in the biosciences. I am currently supported by the NSF Graduate Research Fellowship. My research focuses on:
 - Leveraging **mechanistic interpretability** frameworks, such as cross-layer transcoders and sparse autoencoders, for circuit discovery, protein design, and extracting biological mechanisms from protein language models.
 
-- Extracting higher-order interactions in models 1000-fold quicker than state-of-the-art methods by developing
-algorithms at the intersection of **signal processing**, **coding theory**, and **combinatorics**.
+- Extracting higher-order interactions in models by developing algorithms at the intersection of **signal processing**, **coding theory**, and **combinatorics**.
 
 - Developing principled **generative models** for high-throughput cryo-electron microscopy (cryo-EM), autoregressive
 protein generation, and variant effect prediction.
 
-My background is highlighly interdisciplinary. I previously validated deep learning models at <a href="https://www.linkedin.com/company/surgalign/">Surgalign</a> (acquired by Xtant Medical), developed an optical surgical platform in the <a href="https://www.talkelab.ucsd.edu/">Talke Biomedical Device Lab</a>, and designed a bioelectronic COVID-19 test in the <a href="https://isn.ucsd.edu/index.php">Integrated Systems Neuroengineering Laboratory</a>. 
+My background is highlighly interdisciplinary. I recently accepted an internship offer with <a href="https://generatebiomedicines.com/">Generate:Biomedicines</a> to conduct research in protein structure and cryo-EM structure determination. I have also previously interned at <a href="https://www.linkedin.com/company/surgalign/">Surgalign</a> (acquired by Xtant Medical) validating medical imaging deep learning models.
 
 Outside of research, I co-chair <a href="https://research.gatech.edu/2025-bioe-day">Bioengineering Day</a> at Georgia Tech, which aims to highlight interdisciplinary research. Previously, I served as President of the <a href="https://ieeeatucsd.org//">IEEE student branch</a> and helped found the <a href="https://www.instagram.com/embs.at.ucsd/">IEEE EMBS chapter</a> at UC San Diego.   
