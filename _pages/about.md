@@ -29,6 +29,6 @@ I currently work with Dr. <a href="https://amirmohan.github.io/">Amirali Aghazad
 - Developing principled **generative models** for high-throughput cryo-electron microscopy (cryo-EM), autoregressive
 protein generation, and variant effect prediction.
 
-My background is highlighly interdisciplinary. I recently accepted an internship offer with <a href="https://generatebiomedicines.com/">Generate:Biomedicines</a> to conduct research in protein structure and cryo-EM structure determination. I have also previously interned at <a href="https://www.linkedin.com/company/surgalign/">Surgalign</a> (acquired by Xtant Medical) validating medical imaging deep learning models.
+My background is highlighly interdisciplinary. I previously interned at <a href="https://generatebiomedicines.com/">Generate:Biomedicines</a> to conduct research on protein structure prediction foundation models. I have also previously interned at <a href="https://www.linkedin.com/company/surgalign/">Surgalign</a> (acquired by Xtant Medical) validating medical imaging deep learning models.
 
 Outside of research, I co-chair <a href="https://research.gatech.edu/2025-bioe-day">Bioengineering Day</a> at Georgia Tech, which aims to highlight interdisciplinary research. Previously, I served as President of the <a href="https://ieeeatucsd.org//">IEEE student branch</a> and helped found the <a href="https://www.instagram.com/embs.at.ucsd/">IEEE EMBS chapter</a> at UC San Diego.   
